@@ -1,167 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kirresha Ampong | Web Design Portfolio</title>
-  <meta name="description" content="Portfolio of Kirresha Ampong, a beginner web designer.">
-
-  <!-- Inter font (same font as the Figma design). If it can't load, the browser uses a normal sans-serif font. -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Connects the CSS file (the style) -->
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kirresha Ampong | Web Designer</title>
+<meta name="description" content="Portfolio of Kirresha Ampong, a beginner web designer learning layout, color and prototyping in Figma.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="bokeh" id="bokeh" aria-hidden="true"></div>
 
-  <!-- The glowing lights are created by script.js and placed in here -->
-  <div class="bokeh" id="bokeh" aria-hidden="true"></div>
+<header class="nav">
+  <a class="logo" href="#top">Kirresha Ampong</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  <nav id="menu">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a class="pill" href="#contact">Let's talk</a>
+  </nav>
+</header>
 
-  <!-- ===== HEADER / NAVIGATION ===== -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#home">Kirresha Ampong</a>
-
-      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-
-      <nav id="site-nav" class="site-nav" aria-label="Main">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a class="btn btn-outline btn-small" href="mailto:kirreshaampong@gmail.com">Let's talk</a>
-      </nav>
+<main id="top">
+  <section class="hero wrap">
+    <p class="eyebrow">Web designer · Polomolok South Cotabato</p>
+    <h1>I designed my own portfolio as a beginner to practice layout, color and prototyping.</h1>
+    <p class="lead">These are my first projects: redesigns and concepts that show how I plan, design and prototype.</p>
+    <div class="actions">
+      <a class="btn gold" href="#work">View my work</a>
+      <a class="btn outline" href="#contact">Get in touch</a>
     </div>
-  </header>
+  </section>
 
-  <main>
-
-    <!-- ===== HOME (HERO) ===== -->
-    <section class="hero" id="home">
-      <div class="container">
-        <p class="label">Web designer</p>
-        <h1>I'm a beginner web designer learning by building real, usable websites.</h1>
-        <p class="lead">These are my first projects: redesigns and concepts that show how I plan, design and prototype.</p>
-        <div class="button-row">
-          <a class="btn btn-gold" href="#work">View my work</a>
-          <a class="btn btn-outline" href="#contact">Get in touch</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== WORK ===== -->
-    <section class="section" id="work">
-      <div class="container">
-        <h2>My first project</h2>
-
-        <article class="card">
-          <!-- This box is a placeholder picture made with CSS.
-               To use your own image, delete the <div class="thumb"> block
-               and write: <img src="thumbnail.png" alt="Preview of my portfolio website"> -->
-          <div class="thumb" role="img" aria-label="Preview of my portfolio website">
-            <span class="thumb-dot thumb-dot-gold"></span>
-            <span class="thumb-dot thumb-dot-violet"></span>
-          </div>
-          <div class="card-body">
-            <p class="tags">UI · Prototype · Figma</p>
-            <h3>My portfolio website</h3>
-            <p>I designed my own portfolio as a beginner to practice layout, color and prototyping.</p>
-            <a class="btn btn-outline btn-small" href="#case-study">View case study</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- ===== CASE STUDY ===== -->
-    <section class="section" id="case-study">
-      <div class="container">
-        <p class="label">Case study</p>
-        <h2>My portfolio website</h2>
-        <p class="lead">I'm a beginner web designer, and I designed my own portfolio in Figma to practice layout, color and prototyping.</p>
-
-        <dl class="meta">
-          <div><dt>Client</dt><dd>Personal project</dd></div>
-          <div><dt>Role</dt><dd>Web designer</dd></div>
-          <!-- Change the timeline to how long it really took you -->
-          <div><dt>Timeline</dt><dd>2 weeks</dd></div>
-          <div><dt>Tools</dt><dd>Figma</dd></div>
-        </dl>
-
-        <div class="columns">
-          <div>
-            <h3>What was broken?</h3>
-            <p>As a beginner, I had no portfolio and no projects to show yet, so I had no way to share my skills.</p>
-          </div>
-          <div>
-            <h3>What did you do?</h3>
-            <p>As a beginner, I designed my own portfolio in Figma. I made five pages, chose a purple, gold and black style, and linked them into a clickable prototype.</p>
-          </div>
-          <div>
-            <h3>What changed?</h3>
-            <p>I now have a portfolio design with a clickable prototype, and I learned layout, color and prototyping.</p>
+  <section class="wrap" id="work">
+    <h2>My first project</h2>
+    <article class="project">
+      <div class="mock" aria-hidden="true">
+        <div class="mock-bar"><i></i><i></i><i></i></div>
+        <div class="mock-body">
+          <div class="mock-nav"><b>Kirresha Ampong</b><span>Work About Contact</span></div>
+          <div class="mock-grid">
+            <div>
+              <small>Web designer</small>
+              <strong>I'm a beginner web designer learning by building real websites.</strong>
+              <div class="mock-btns"><u class="g"></u><u></u></div>
+            </div>
+            <div class="mock-card"><i class="c1"></i><i class="c2"></i></div>
           </div>
         </div>
-
-        <h3 class="subhead">Process</h3>
-        <ol class="steps">
-          <li><strong>Plan</strong><span>I decided what pages and content my portfolio needs.</span></li>
-          <li><strong>Style</strong><span>I chose the colors, fonts and layout.</span></li>
-          <li><strong>Design</strong><span>I built the pages in Figma.</span></li>
-          <li><strong>Prototype</strong><span>I linked the pages so they work like a real site.</span></li>
-        </ol>
-
-        <h3 class="subhead">Results</h3>
-        <ul class="results">
-          <li><span class="big">5</span> pages designed</li>
-          <li><span class="big">1</span> clickable prototype</li>
-          <li><span class="big">1</span> screen size (desktop)</li>
-        </ul>
       </div>
-    </section>
+      <p class="eyebrow">UI · Prototype · Figma</p>
+      <h3>Portfolio design</h3>
+      <p class="lead">I designed my own portfolio as a beginner to learn layout, color and prototyping in Figma.</p>
+      <a class="btn outline" href="#case">View design →</a>
+      <span class="count">01</span>
+    </article>
+  </section>
 
-    <!-- ===== ABOUT ===== -->
-    <section class="section about" id="about">
-      <div class="container">
-        <h2>About</h2>
-        <p class="about-text">I'm a beginner web designer. I'm learning Figma, layout and typography by building practice projects, and I'm looking for my first chance to work on a real website.</p>
+  <section class="wrap" id="case">
+    <p class="eyebrow">UI · Prototype · Figma</p>
+    <h2 class="big">Portfolio web design</h2>
+    <p class="lead">I designed my own portfolio as a beginner to learn layout, color and prototyping in Figma.</p>
+    <dl class="meta">
+      <div><dt>Role</dt><dd>Web designer</dd></div>
+      <div><dt>Timeline</dt><dd>2 weeks</dd></div>
+      <div><dt>Tools</dt><dd>Figma</dd></div>
+    </dl>
 
-        <ul class="chips" aria-label="Skills">
-          <li>Figma</li>
-          <li>Wireframing</li>
-          <li>Layout &amp; grids</li>
-          <li>Typography</li>
-          <li>Color</li>
-          <li>Prototyping</li>
-        </ul>
-
-        <!-- Put your résumé file in the same folder and change href to its name, for example "resume.pdf" -->
-        <a class="btn btn-gold" href="resume.pdf" download>Download résumé</a>
-      </div>
-    </section>
-
-    <!-- ===== CONTACT ===== -->
-    <section class="section contact" id="contact">
-      <div class="container">
-        <h2 class="contact-title">Let's work together.</h2>
-        <a class="email" href="mailto:kirreshaampong@gmail.com">kirreshaampong@gmail.com</a>
-        <div class="button-row">
-          <a class="btn btn-gold" href="mailto:kirreshaampong@gmail.com?subject=New%20project">Start a project</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; <span id="year">2026</span> Kirresha Ampong</p>
-      <p>Behance · LinkedIn · Dribbble</p>
+    <div class="trio">
+      <div><p class="eyebrow">The problem</p><h3>What was broken?</h3>
+        <p>As a beginner, I had no portfolio and no projects to show yet, so I had no way to share my skills.</p></div>
+      <div><p class="eyebrow">The solution</p><h3>What did you do?</h3>
+        <p>As a beginner, I designed my own portfolio in Figma. I made five pages, chose a purple, gold and black style, and linked them into a clickable prototype.</p></div>
+      <div><p class="eyebrow">The outcome</p><h3>What changed?</h3>
+        <p>I now have a portfolio design with a clickable prototype, and I learned layout, color and prototyping.</p></div>
     </div>
-  </footer>
 
-  <!-- Connects the JavaScript file (the actions) -->
-  <script src="script.js"></script>
+    <h2 class="process-title">Process</h2>
+    <ol class="steps">
+      <li><span>01</span><h4>Plan</h4><p>I decided what pages and content my portfolio needs.</p></li>
+      <li><span>02</span><h4>Style</h4><p>I chose the colors, fonts and layout.</p></li>
+      <li><span>03</span><h4>Design</h4><p>I built the five pages in Figma.</p></li>
+      <li><span>04</span><h4>Prototype</h4><p>I linked the pages so they work like a real site.</p></li>
+    </ol>
+  </section>
+
+  <section class="wrap about" id="about">
+    <p class="eyebrow">About</p>
+    <div>
+      <p class="statement">I'm a beginner web designer, and I designed my own portfolio in Figma to practice layout, color and prototyping.</p>
+      <ul class="chips">
+        <li>Typography</li><li>Color</li><li>Prototyping</li><li>Figma</li>
+      </ul>
+    </div>
+    <p class="eyebrow">Skills</p>
+    <ul class="skills">
+      <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>PHP</li><li>GitHub</li>
+    </ul>
+  </section>
+
+  <section class="wrap contact" id="contact">
+    <h2 class="huge">Let's work together.</h2>
+    <a class="mail" href="mailto:kirreshaampong@gmail.com">kirreshaampong@gmail.com</a>
+    <a class="btn gold" href="mailto:kirreshaampong@gmail.com?subject=New%20project">Start a project</a>
+  </section>
+</main>
+
+<footer class="wrap foot">© <span id="year"></span> Kirresha Ampong</footer>
+<script src="script.js"></script>
 </body>
 </html>
